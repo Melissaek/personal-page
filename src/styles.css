@@ -1,27 +1,135 @@
 body{
-    font-family: 'Poppins', 'sans-serif'
-
+    font-family: 'Poppins', 'sans-serif';
+    margin: 0px;
+    
 }
 
-section{
+*{
+    scroll-behavior: smooth;
+}
+
+
+/*section{
     height: 500px;
     background-color: gray;
-    border: solid black 1px;
-}
+   
+}*/
 
 .hero{
-    background-color: rgb(30, 112, 175);
+    background-image: url('../src/images/background1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh; /*going to be 100% of the viewport height, so full page*/
+    
 }
 
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(0, 225, 239)
+}
 footer{
-    height: 500px;
+    
     background-color: black;
+    padding: 1px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    
+
+}
+
+
+.container{
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+form{
+    
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    padding-bottom: 150px;
+}
+
+.contact{
+    background-image: url('../src/images/background1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1px;
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 20px;
+    outline: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    background: rgb(221, 227, 230);
+    font-size: 16px;  
+
+}
+
+.submit{
+    padding: 15px;
+    background: rgb(1, 150, 230);
+    color: black;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+
+.submit:hover{
+    background: rgb(0, 120, 185);
+}
+
+.submit:active{
+    background: rgb(0, 120, 185);
 }
 
 nav{
     display: flex;
-    justify-content: space-between; /*what does this do*/
+    justify-content: space-between; 
+}
+
+.navbar{
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu{
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+    background-color: black;
 }
 
 ul{
@@ -32,9 +140,12 @@ ul{
     font-size: 20px;
 }
 
-li{
-    
-    text-decoration: noen;
+ul.show{
+    display: block;
+}
+
+li{ 
+    text-decoration: none;
 }
 
 h1{
@@ -42,10 +153,35 @@ h1{
     margin: 0;
 }
 
+h2{
+    font-size: 50px;
+    
+}
+
+h3{
+    margin-top: 90px;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+}
+
+h4{
+    font-size: 30px;
+    
+}
+
 p{
     margin: 0;
     font-size: 30px;
     font-weight: 300;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.text{
+    font-size: 20px;
 }
 
 .hero-area{
@@ -58,13 +194,14 @@ p{
 .hero-text{
     margin-left: 80px;
     margin-bottom: 200px;
+    margin-top: 70px;
 }
 
 .button{
     width: 200px;
     height: 50px;
     border-radius: 25px;
-    background-color: cornflowerblue;
+    background-color: rgb(0, 195, 230);
     text-align: center;
     font-size: 30px;
     font-weight: 300;
@@ -73,23 +210,183 @@ p{
 }
 
 .button:hover{ /*while hovering over*/
-    background-color: rgb(49, 49, 216)
+    background-color: rgb(0, 150, 200)
 }
 
 .button:active{ /* on click*/
-    background-color: gray;
-    color: rgb(70, 68, 68);
+    background-color: rgb(0, 110, 147);
+    
 }
 
 .socials{
     padding-bottom: 200px;
+    padding-top: 125px;
+    
+}
+
+.social-button{
+    padding-bottom: 20px;
 }
 
 .logo{
     height: 80px;
     margin: 10px;
+    
 }
 
 .social{
     margin: 20px;
+    padding: 20px;
+   
+ 
+}
+
+.about{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb( 0, 214, 190);
+    padding: 50px;
+    height: 500px;
+}
+
+
+
+.information{
+    width: 100vh;
+}
+
+.skills{
+    width: 100vh;
+    
+}
+
+.skill-list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill-button{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(1, 139, 202);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 5px;
+    margin-top: 20px;    
+    color: white;
+}
+
+.projects{
+    
+    /*height: 1500px;*/
+    background-color: rgb( 0, 214, 200);
+    padding: 1px;
+}
+
+.project-container{
+    margin-left: 200px;
+    margin-right:200px;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    padding: 100px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+
+    
+   
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.hamburger.focus{
+    outline: 0;
+}
+
+@media only screen and (max-width: 1000px){
+    .project-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .project-content{
+        text-align: center;
+    }
+
+    
+    ul{
+        display: none;
+    }
+
+   
+}
+
+.project-img{
+    margin-left: auto;
+    margin-right: auto;
+    
+    justify-content: center;
+    min-width: 500px;
+    min-height: 300px;
+    
+    border: solid black 1px;
+
+}
+
+.project-content{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(max-width: 1024px){
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: darkblue;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        left: 0;
+
+    }
+}
+
+.icons{
+    display: flex;
+    align-content: row;
+
 }
