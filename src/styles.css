@@ -32,13 +32,24 @@ body{
 footer{
     
     background-color: black;
-    padding: 1px;
+    padding: 2px;
     height: 300px;
     display: flex;
     justify-content: space-around;
+    align-content: center;
     color: white;
-    
 
+}
+
+.info{
+    width: 50%;
+    padding: 30px;
+    padding-left: 150px;
+}
+.footer-socials{
+    width: 50%;
+    padding: 30px;
+    padding-left: 150px;
 }
 
 
@@ -172,7 +183,7 @@ h4{
 
 p{
     margin: 0;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 300;
 }
 
@@ -270,13 +281,13 @@ a{
     width: 200px;
     height: 50px;
     border-radius: 10px;
-    background-color: rgb(1, 139, 202);
+    background-color: rgb(0, 147, 130);
     text-align: center;
     font-size: 30px;
     font-weight: 300;
     padding-top: 5px;
     margin-top: 20px;    
-    color: white;
+    color: rgb(26, 26, 26);
 }
 
 .projects{
@@ -365,11 +376,11 @@ a{
 
     .nav-menu{
         position: fixed;
-        left: -100%;
+        left: -120%;
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color: darkblue;
+        background-color:  rgb(0, 225, 239);
         width: 100%;
         text-align: center;
         transition: 0.3s;
@@ -380,7 +391,7 @@ a{
     }
 
     .nav-menu.active{
-        left: 0;
+        left: -5%;
 
     }
 }
