@@ -27,7 +27,8 @@ body{
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgb(0, 225, 239)
+    background-color: rgb(0, 225, 239);
+    margin-bottom: 100px;
 }
 footer{
     
@@ -113,11 +114,13 @@ form input, form textarea{
     background: rgb(0, 120, 185);
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between; 
+    padding: 0 20px; /* Add padding to prevent content from touching the edges */
 }
 
+/* Style the navbar container */
 .navbar {
     width: 100%;
     min-height: 70px;
@@ -126,14 +129,29 @@ nav{
     align-items: center;
 }
 
+/* Style the menu items container */
 .nav-menu {
-    margin: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    gap: 20px; /* Adjust gap if needed */
+    flex-grow: 1; /* Allows the menu to use available space */
+    gap: 15px; /* Adjust gap to prevent items from being too close */
+    padding-right: 30px;
 }
 
+/* Style each menu item */
+.nav-menu li {
+    list-style: none; /* Remove default list styling */
+    padding: 0 10px; /* Adjust padding for spacing */
+}
+
+/* Optional: Add responsive behavior */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px; /* Adjust gap for smaller screens */
+    }
+}
 .bar{
     display: block;
     width: 25px;
@@ -260,7 +278,14 @@ a{
     height: 500px;
 }
 
-
+.intro{
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb( 0, 214, 190);
+    padding: 50px;
+    height: 500px;
+    margin-top: 100px;
+}
 
 .information{
     width: 100vh;
