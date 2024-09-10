@@ -118,7 +118,7 @@ nav{
     justify-content: space-between; 
 }
 
-.navbar{
+.navbar {
     width: 100%;
     min-height: 70px;
     display: flex;
@@ -126,12 +126,12 @@ nav{
     align-items: center;
 }
 
-.nav-menu{
+.nav-menu {
     margin: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 60px;
+    gap: 20px; /* Adjust gap if needed */
 }
 
 .bar{
