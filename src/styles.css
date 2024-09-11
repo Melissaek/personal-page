@@ -23,12 +23,30 @@ body{
     
 }
 
+.banner{
+    background-image: url('../src/images/SSC\ Cartoon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 100vh; /*going to be 100% of the viewport height, so full page*/
+    margin: 0;
+    padding: 0;
+}
+
+.hero-content {
+    margin-left: 80px;
+    margin-bottom: 200px;
+    margin-top: 100px;
+    color: white;
+}
+
 .header{
     position: fixed;
     top: 0;
     width: 100%;
     background-color: rgb(0, 225, 239);
     margin-bottom: 100px;
+    z-index: 1000;
 }
 footer{
     
@@ -188,14 +206,17 @@ h2{
 }
 
 h3{
-    margin-top: 90px;
+    margin-top: 0px;
     font-size: 50px;
-    text-align: center;
+    text-align: left;
     color: black;
+    font-size:30px;
 }
 
 h4{
+    margin: 0;
     font-size: 30px;
+    font-weight: 500;
     
 }
 
@@ -219,6 +240,7 @@ a{
     justify-content: space-between;
     align-items: center;
 }
+
 
 .hero-text{
     margin-left: 80px;
@@ -279,6 +301,117 @@ a{
 }
 
 .intro{
+    display: flex;
+    justify-content: flex-start;
+    background-color:rgba(137, 193, 123, 0.749);
+    padding: 50px;
+    height: 500px;
+  
+}
+
+.employer{
+    /* margin-left: 200px; */
+    /* margin-right:200px; */
+    /* flex-wrap:wrap; */
+    display: flex;
+    justify-content: flex-start;
+    padding: 50px;
+    
+    height: auto;
+    background-color:rgba(137, 193, 123, 0.749);
+}
+
+.description{
+    display: flex;
+    justify-content: flex-start;
+    padding: 50px;
+    width: 100%;
+    height: auto;
+}
+
+.focus{
+    display: flex;
+    justify-content: flex-start;
+    padding: 50px;
+    width: 100%;
+    height: auto;
+}
+
+
+.goals{
+    display: flex;
+    justify-content: flex-start;
+    background-color:rgba(137, 193, 123, 0.749);
+    padding: 50px;
+    
+    
+    /* height: auto; */
+}
+/* Ensure you have a grid layout for the goals */
+.goals-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 columns */
+    gap: 150px; /* Space between columns */
+
+    padding-left: 150px;
+    margin: 0 auto;
+    
+
+  }
+  
+  .goal-item {
+    border: 3px solid rgba(101, 143, 90, 0.749);
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+    min-width: 300px;
+    min-height: 200px;
+
+  }
+  
+  .goal-item:hover {
+    background-color: rgba(104, 146, 95, 0.749);
+  }
+  
+  .goal-description {
+    display: none; /* Hide paragraphs initially */
+    font-size: 17px;
+  }
+  
+  .goal-item.active .goal-description {
+    display: block; /* Show paragraph when active */
+  }
+  
+/* 
+.goals .information {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+} */
+
+.focus{
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb( 0, 214, 190);
+    padding: 50px;
+    height: 500px;
+    margin-top: 100px;
+}
+.conclusion{
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb( 0, 214, 190);
+    padding: 50px;
+    height: 500px;
+    margin-top: 100px;
+}
+
+.acknowledgments{
     display: flex;
     justify-content: flex-start;
     background-color: rgb( 0, 214, 190);
@@ -425,4 +558,124 @@ a{
     display: flex;
     align-content: row;
 
+}
+
+.path { 
+    stroke-dasharray: 1000; 
+    stroke-dashoffset: 1000; 
+    animation: dash 3s linear forwards; 
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+    stroke: #9cba9c;
+}
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+.dashed {
+    stroke-dasharray: 5,12;
+}
+#arrow {
+    animation: arrow 2s linear forwards; 
+    opacity: 0;
+    fill: #004d00;
+}
+@keyframes arrow {
+    to {
+        opacity: 1;
+    }
+}
+.ifrm {
+    border: none; 
+    width: 100%;
+    margin-top: 50px;
+}
+/* Additional CSS for the SVG animation */
+.graph__wrapper {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.employer .information {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    justify-content: space-between; /* Distributes space between items */
+  }
+  
+  .employer-content {
+    flex: 1; /* Allows the content to take available space */
+  }
+  
+  .employer-image img {
+    margin-top:150px;
+    max-width: 550px; /* Ensures the image doesn't overflow its container */
+    height: auto; /* Maintains aspect ratio */
+    margin-left: 20px; /* Adds space between text and image */
+    border: 5px solid #006b3f; /* Dark sage green border */
+  border-radius: 8px; 
+  }
+
+  .image-slider {
+    
+    position: relative;
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto;
+    overflow: hidden;
+ 
+
+}
+
+.slides {
+   
+    margin-top:150px;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    position: relative;
+    min-width: 100%;
+}
+.slides img {
+    width: 100%;
+    height: auto;
+  
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+button:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
 }
