@@ -179,12 +179,20 @@ nav {
     background-color: black;
 }
 
-ul{
-    display: flex;
+.nav-menu li{
+    /* display: flex;
     list-style-type: none;
     width: 400px;
-    justify-content: space-around;
+    justify-content: space-around; */
     font-size: 20px;
+}
+
+.list li {
+    
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
 }
 
 ul.show{
@@ -206,7 +214,8 @@ h2{
 }
 
 h3{
-    margin-top: 0px;
+    margin-top: 40px;
+    margin-bottom:10px;
     font-size: 50px;
     text-align: left;
     color: black;
@@ -222,14 +231,30 @@ h4{
 
 p{
     margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.menu{
+    color: black;
+}
+
+.menu:hover{
+    text-decoration: none;
+    color: #005d44;
     font-size: 25px;
-    font-weight: 300;
 }
 
 a{
     text-decoration: none;
-    color: black;
+    color: #026bb3;
 }
+
+a:hover{
+    text-decoration:underline;
+    color:darkblue;
+}
+
 .text{
     font-size: 20px;
 }
@@ -301,11 +326,13 @@ a{
 }
 
 .intro{
-    display: flex;
-    justify-content: flex-start;
+    
 
     padding: 50px;
-    height: 500px;
+    height: auto;
+    margin-left: 150px;
+    margin-right:150px;
+
   
 }
 
@@ -684,6 +711,23 @@ button:hover {
     width: 70%;
     max-width: 800px;
     object-fit: contain;
-    margin-left: 100px;
+    
    
+}
+
+/*F24 WTR*/
+.responsibilities{
+    
+    padding: 50px;
+    height: auto;
+    margin-left: 150px;
+    margin-right:150px;
+}
+
+.responsibilities ul {
+   
+}
+
+.responsibilities li {
+
 }
