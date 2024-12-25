@@ -276,9 +276,12 @@ a:hover{
     color: darkblue;
 }
 
+.report-button a{
+    color: white;
+}
 .report-button a:hover{
     text-decoration: none;
-    color: darkblue;
+    color: rgb(55, 142, 110);
 }
 
 .button a{
